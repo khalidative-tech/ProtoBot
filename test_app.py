@@ -1,3 +1,3 @@
-def test_server():
+def test_app():
     assert True == True
     
