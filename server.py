@@ -3,8 +3,8 @@ from flask import Flask, request
 app = Flask(__name__)
 
 FB_API_URL = 'https://graph.facebook.com/v2.6/me/messages'
-VERIFY_TOKEN = ''# <paste your verify token here>
-PAGE_ACCESS_TOKEN = ''# paste your page access token here>"
+VERIFY_TOKEN = "fq39iuhfq93i748ufhpq3kljhfLKJHokud9f82kjHDFSIU8"
+PAGE_ACCESS_TOKEN = "EAAHHkrtyc6kBAPFYXvBamQvc3SqdnhGWZCH5VQde4ePZCZAGK59l57nkmvffkDATmQxFDV40eZCqhKoCt1bzrz9KsPWlOSLFDJZBawcVVsVEX4fdZBGTRv9zPYKhZBN59iXvLW8oKAKP9erO1ZBSmv5j7TrFx8dHe6sZBwjzgaC6P1wZDZD"
 
 
 def get_bot_response(message):
@@ -76,3 +76,7 @@ def send_message(recipient_id, text):
     )
 
     return response.json()
+
+def test_server():
+    assert True == True
+    
