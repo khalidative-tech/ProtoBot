@@ -78,4 +78,4 @@ def send_message(recipient_id, text):
     return response.json()
 
 def test():
-  assert True = True
+  assert True == True
