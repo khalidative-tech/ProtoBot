@@ -1,4 +1,5 @@
 from flask import Flask, request
+import test_server
 
 app = Flask(__name__)
 
@@ -77,6 +78,3 @@ def send_message(recipient_id, text):
 
     return response.json()
 
-def test_server():
-    assert True == True
-    
