@@ -1,11 +1,12 @@
 from flask import Flask, request
 import test_server
+import os
 
 app = Flask(__name__)
 
 FB_API_URL = 'https://graph.facebook.com/v2.6/me/messages'
-VERIFY_TOKEN = "fq39iuhfq93i748ufhpq3kljhfLKJHokud9f82kjHDFSIU8"
-PAGE_ACCESS_TOKEN = "EAAHHkrtyc6kBAPFYXvBamQvc3SqdnhGWZCH5VQde4ePZCZAGK59l57nkmvffkDATmQxFDV40eZCqhKoCt1bzrz9KsPWlOSLFDJZBawcVVsVEX4fdZBGTRv9zPYKhZBN59iXvLW8oKAKP9erO1ZBSmv5j7TrFx8dHe6sZBwjzgaC6P1wZDZD"
+VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
+PAGE_ACCESS_TOKEN = os.environ['PAGE_ACCESS_TOKEN'] 
 
 
 def get_bot_response(message):
