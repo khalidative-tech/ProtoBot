@@ -1,1 +1,1 @@
-web: rasa run -p $PORT
+web: rasa run --credentials credentials.yml -p $PORT
