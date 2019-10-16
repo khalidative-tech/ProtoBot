@@ -1,10 +1,4 @@
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
   - agent_acquaintance
   - agent_age
   - agent_annoying
@@ -90,17 +84,6 @@ intents:
   - user_will_be_back
 
 templates:
-  utter_greet:
-  - text: "Hey! How are you?"
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-  utter_did_that_help:
-  - text: "Did that help you?"
-  utter_happy:
-  - text: "Great, carry on!"
-  utter_goodbye:
-  - text: "Bye"
   utter_agent_acquaintance:
   - text: "I'm an AI agent"
   - text: "Think of me as an AI agent_"
@@ -529,11 +512,6 @@ templates:
   - text: "All right. I'll be here."
 
 actions:
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
 - utter_agent_acquaintance
 - utter_agent_age
 - utter_agent_annoying
